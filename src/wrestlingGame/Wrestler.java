@@ -1,6 +1,6 @@
 package wrestlingGame;
 
-public abstract class Wrestler {
+public class Wrestler {
 	
 	private double health;
 	private double experience; 
@@ -8,16 +8,29 @@ public abstract class Wrestler {
 	private double promo;
 	
 	//NOT SURE I NEED THIS TO RUN, BUT IT'S HERE INCASE I DO. IT'S RUNNING WITHOUT IT CURRENTLY
-//	public Wrestler() {
-//		
-//	}
-//	public Wrestler(double health, double experience, double strength, double promo) {
-//		this.health = health;
-//		this.experience = experience;
-//		this.strength = strength;
-//		this.promo = promo;
-//	}
-//	
+	public Wrestler() {
+		
+	}
+	public Wrestler(double health, double experience, double strength, double promo) {
+		this.health = health;
+		this.experience = experience;
+		this.strength = strength;
+		this.promo = promo;
+	}
+	
+	//factory method 
+	public Wrestler getInstance(String choice) {
+		switch (choice) {
+		case "A":
+			return new hillbilly();
+		case "B":
+			return new smartMark();
+		case "C": 
+			return new FamilyFirst();
+		}
+		return null;
+	}
+	
 	public double getHealth() {
 		return health;
 	}
