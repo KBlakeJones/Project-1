@@ -1,7 +1,21 @@
 package wrestlingGame;
 
 public class Scene {
-	private String script;
+	private String script = "A:\nYou’re a smart mark.  You know what the moves are and the basic execution.\nYou’re cousins, Josh and Tosh, also want to train.  How hard can it really be?\nYou have access to plywood, rope and 4x4s.  Set up a backyard wrestling ring and start training with your cousins.  ";
+	/**
+	 * @return the script
+	 */
+	public String getScript() {
+		return script;
+	}
+
+	/**
+	 * @param script the script to set
+	 */
+	public void setScript(String script) {
+		this.script = script;
+	}
+
 	private String scene1 = "Time for your first match";
 	private String scene2 = "2222222222";
 	private String scene3 = "33333333";

@@ -5,13 +5,13 @@ import java.util.Scanner;
 public class GameControllerMain {
 
 	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
 		
+		Scanner in = new Scanner(System.in);
+		String result; 
+		Wrestler wrestler = new Wrestler();
+		Scene a = new Scene();
 		System.out.println("Welcome to WrestleCrania! You'll have to use your brain to make it to the main event.");
-//		System.out.println("Are you ready to start a game?");
-//		String result = in.next();
-//		result = (result.toLowerCase().substring(0, 1));
-		String result;
+
 		do {
 			System.out.println("Are you ready to start a game?");
 			result = in.next();
@@ -37,19 +37,40 @@ public class GameControllerMain {
 
 
 		System.out.println("choose a b c ");
+		do {
 		try {
-		Wrestler wrestler =  new Wrestler();
+//******		Wrestler wrestler =  new Wrestler();
 		result = in.next();
 		result = (result.toUpperCase().substring(0, 1));
-		wrestler = wrestler.getInstance(result);
+		wrestler = Wrestler.getInstance(result);
 		System.out.println(wrestler.getExperience());
 		System.out.println(wrestler.getHealth());
 		}catch (NullPointerException e){
 			System.out.println("Please enter A, B, or C ");
+			
 		}
+		} while(!result.equals("A") && !result.equals("B") && !result.equals("C"));
+		
+		System.out.println(wrestler.getHealth());
+		System.out.println(wrestler.getStrength());
+		System.out.println(wrestler.getPromo());
+		System.out.println(wrestler.getInstance2("A"));
+		System.out.println("Diet important choose a b c ");
+		do {
+			try {
+//******			Wrestler wrestler =  new Wrestler();
+			result = in.next();
+			result = (result.toUpperCase().substring(0, 1));
+			wrestler = wrestler.getInstance(result);
+			System.out.println(wrestler.getExperience());
+			System.out.println(wrestler.getHealth());
+			}catch (NullPointerException e){
+				System.out.println("Please enter A, B, or C ");
+			}
+			} while(!result.equals("A") && !result.equals("B") && !result.equals("C"));
 		
 
-		Scene a = new Scene();
+	
 		System.out.println(a.getScene1());
 		
 		System.out.println("You ready?");
@@ -62,9 +83,26 @@ public class GameControllerMain {
 		} else {
 			System.out.println("Please enter yes or no");
 		}
-		//add in if yes then this
-		//if no then loop to front come back when you're ready chump or another catch-phrase
 		
+		System.out.println("Which match would you like to try first?");
+		
+		do {
+			try {
+	//******		Wrestler wrestler =  new Wrestler();
+			result = in.next();
+			result = (result.toUpperCase().substring(0, 1));
+			if (result.equals("A")) {
+				System.out.println(a.getScene4());
+			} else if (result.equals("B")) {
+				System.out.println(a.getScene5());
+			} else if(result.equals("C")) {
+				System.out.println(a.getScene6());
+			} else
+				System.out.println("Please Pick A, B or C");
+			}catch (NullPointerException e){
+				System.out.println("Please enter A, B, or C ");
+			}
+			} while(!result.equals("A") && !result.equals("B") && !result.equals("C"));
 		
 		
 		

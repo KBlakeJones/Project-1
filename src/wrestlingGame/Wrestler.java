@@ -19,7 +19,7 @@ public class Wrestler {
 	}
 	
 	//factory method 
-	public Wrestler getInstance(String choice) {
+	public static Wrestler getInstance(String choice) {
 		switch (choice) {
 		case "A":
 			return new hillbilly();
@@ -29,6 +29,18 @@ public class Wrestler {
 			return new FamilyFirst();
 		}
 		return null;
+	}
+	
+	public double getInstance2(String choice) {
+		switch (choice) {
+		case "A":
+			 return health = health + 50;
+		case "B":
+			return health = health + 30;
+		case "C": 
+			return health = health + 20;
+		}
+		return 0;
 	}
 	
 	public double getHealth() {
