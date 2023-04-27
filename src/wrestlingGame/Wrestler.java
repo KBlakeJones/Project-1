@@ -2,7 +2,7 @@ package wrestlingGame;
 
 public class Wrestler {
 	
-	private double health;
+	private static double health;
 	private double experience; 
 	private double strength; 
 	private double promo;
@@ -28,17 +28,18 @@ public class Wrestler {
 		case "C": 
 			return new FamilyFirst();
 		}
-		return null;
-	}
-	
-	public double getInstance2(String choice) {
-		switch (choice) {
+		throw new IllegalArgumentException("Please pick A, B, or C ");
+			
+	}	
+	//.gethealth .sethealth 
+	public static double getInstance2(String result) {
+		switch (result) {
 		case "A":
-			 return health = health + 50;
+			  return health = health + 50;
 		case "B":
-			return health = health + 30;
+			 return health = health + 30;
 		case "C": 
-			return health = health + 20;
+			 return health = health + 20;
 		}
 		return 0;
 	}

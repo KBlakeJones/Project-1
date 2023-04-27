@@ -1,8 +1,9 @@
 package wrestlingGame;
+
 import java.util.Scanner;
-public class Scenes extends Scene {
-	
-	public Scenes() {
+
+public class Matches2 extends Scene{
+	public Matches2() {
 		Scanner in = new Scanner(System.in);
 		String result = null;
 		Scene a = new Scene();
@@ -24,7 +25,8 @@ public class Scenes extends Scene {
 			}
 			} while(!result.equals("A") && !result.equals("B") && !result.equals("C"));
 		
-		in.close();
+//		in.close();
 	}
+
 
 }
