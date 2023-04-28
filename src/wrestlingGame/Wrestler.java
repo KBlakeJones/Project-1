@@ -6,8 +6,7 @@ public class Wrestler {
 	private double experience; 
 	private double strength; 
 	private double promo;
-	
-	//NOT SURE I NEED THIS TO RUN, BUT IT'S HERE INCASE I DO. IT'S RUNNING WITHOUT IT CURRENTLY
+
 	public Wrestler() {
 		
 	}

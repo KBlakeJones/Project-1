@@ -31,12 +31,12 @@ public class Scene {
 			+"What did you expect? What a way to start your career though. I like your style!";
 	
 	private String scene8 = "\nGreat Match! If that doesn’t win him the election the fix is in. \n"
-			+ "Kane is one of the safest workers in the industry.  + 20 to health or strength. \n"
-			+ "You worked as a different character expanding your chops +20 for promo and experience.";
+			+ "Kane is one of the safest workers in the industry. Health or strength get the bump. \n"
+			+ "You worked as a different character expanding your chops for promo and experience.";
 	
-	private String scene9 = "Dude, great match.  Unfortunately had to eat the pin, but gained some great experience working with a legend +20. \n"
-			+ "Sheik hasn’t been working matches though so he was a little clumsy.  You took some hard bumps -10 strength and health.\n" 
-			+ "Also nothing Sheik says is PG worthy so you lost -20 promo points. ";
+	private String scene9 = "Dude, great match.  Unfortunately had to eat the pin, but gained some great experience working with a legend. \n"
+			+ "Sheik hasn’t been working matches though so he was a little clumsy.  You took some hard bumps but came out healthy.\n" 
+			+ "Also nothing Sheik says is PG worthy so you lost some promo points. ";
 	
 	private String scene10 = "\nA:\nJesse wants to get back in there.  He set up a tag team match with The Hardy Boys.\n" 
 			+ "TLC match at Hoodslam. \n";
@@ -47,29 +47,36 @@ public class Scene {
 	private String scene12 = "\nC:\nThe Big Show needs a last minute replacement opponent on Smackdown.  It’s a pretty simple squash match.\n" 
 			+ "In and out take the punch and choke slam.\n";
 	
-	private String scene13 = "\nJesse can’t move like he used to. You end up taking a lot of the big bumps in the match.  -20 health and strength.\n" 
-			+ "He also got into it with the promoter so you won’t be working here again.  However you captivated the crowd and learned a ton + 20 promo and experience. ";
+	private String scene13 = "\nJesse can’t move like he used to. You end up taking a lot of the big bumps in the match.\n" 
+			+ "He also got into it with the promoter so you won’t be working here again.  However you captivated the crowd and learned a ton. ";
 	
-	private String scene14 = "\nReally a 5 star dark match?!?!  What a show!  You got pops louder than they main event! + 20 to all points.";
+	private String scene14 = "\nReally a 5 star dark match?!?!  What a show!  You got pops louder than they main event!";
 	
-	private String scene15 = "\nDecent match.  You got your face on tv and luckily you didn’t call the audible and try to power slam Show.  +10 points all around.";
+	private String scene15 = "\nDecent match.  You got your face on tv and luckily you didn’t call the audible and try to power slam Show.";
 	
 	private String scene16 = "\nA:\nNew Jack has become a fan of your work. He wants to work a falls count anywhere match with you.\n" 
 			+ "It's at the Cow Palace so there is space for some crazy spots!\n";
 	
-	private String scene17 = "\nB:\nRazor Ramon \n";
+	private String scene17 = "\nB:\nRazor Ramon has been hearing your name." 
+			+ "\nHe wants to work another ladder match, and he wants to put you over!" 
+			+ "\nIt's risky, but it's Razor Ramon!\n";
 	
-	private String scene18 = "\nC:\nMacho Man Randy Savage \n";
+	private String scene18 = "\nC:\nMacho Man Randy Savage just called your phone!" 
+			+ "\nHe needs a partner for a feud with Al Snow and the Blue Meanie" 
+			+ "\nCan you really pass up an opportunity with these 3?";
 	
 	private String scene19 = "\nThat was the worst decision you could make. New Jack during Mania season?\n" 
 			+ "Seriously what were you thinking? You're lucky you walked out of the ring.\n";
 	
-	private String scene20 = "\nHe might've been known as the bad guy, but he's one of the smartest and safest to work with.\n" 
-			+ "When those screeching tires hit during his entrance I knew we were in for a show.\n" ;
+	private String scene20 = "\nHe might've been known as the bad guy, but he's one of the smartest and safest to work with." 
+			+ "\nWhen those screeching tires hit during his entrance I knew we were in for a show." 
+			+ "\nThe ladders laddered, but the spots were safe." 
+			+ "\nSlow and methodical, Great Match!";
 	
-	private String scene21 = "\nDude you took an elbow drop from the 'MACHO MAN'. What a wild ride!\n" 
+	private String scene21 = "\nDude you teamed with and took an elbow drop from the 'MACHO MAN'. \nWhat a wild ride!\n" 
 			+ "If you wouldn't have looked at Miss Elizabeth he wouldn't have hit you with that stiff shot.\n" 
-			+ "All in all though super good match.";
+			+ "All in all though super good match."
+			+ "And you won a match with the Macho Man!";
 	
 	private String scene22 = "\nWhat? Stone Cold match at mania. What? ";
 	
@@ -83,7 +90,7 @@ public class Scene {
 			+ "\nUnfortunately he cannot compete." 
 			+ "\nMaybe next year buddy.";
 	
-	private String scene25 = "Lol, did you really think you'd get a Mania spot after that performance?  How embarassing!" 
+	private String scene25 = "\nLol, did you really think you'd get a Mania spot after that performance?  How embarassing!" 
 			+ "\nI wouldn't book you for a show at a local armory after that performance. I can't even give you a shot to try again." 
 			+ "\nSee ya loser!";
 	
@@ -100,9 +107,19 @@ public class Scene {
 			+ "\nI mean it was hilarious! \nYou must've eaten 12 stunners" 
 			+ "\nMain evented Mania though! \nChildhood dream is complete!";
 	
-	private String scene28 = "";
+	private String scene28 = "IF YOU SMELLLLLLLL, WHAT THE ROCK, IS COOKING!!! The arena explodes!" 
+			+ "\nIn the ring it's a back and forth battle.\nYou took a rock bottom, but you came back and slowed it down with the camel clutch." 
+			+ "\nYou get the upper hand and the idea hits you.\nLet's hit him with the people's elbow and become the new people's champion" 
+			+ "\nYou hit the ropes, you're shimmying and shaking and 'BOOM!"
+			+ "\nYou get kicked in the side of the head!" + "\nIt's Josh and Tosh!" 
+			+ "\nThe Bosh Brothers have turned on you!"
+			+ "\nApparently you're not the next Bloodline"
+			+ "\nRock covers for the 123";
+			
 	
-	private String scene29 = "";
+	private String scene29 = "IF YOU SMELLLLLLLL, WHAT THE ROCK, IS COOKING!!! The arena explodes!" 
+			+ "\nNot much of a match though.\nRock is just here to promote the next 'Hobbs and Shaw'." 
+			+ "\nYou knew what it was going in though.\nYou still wrestled the Rock at Mania!";
 	
 	
 	public Scene() {
