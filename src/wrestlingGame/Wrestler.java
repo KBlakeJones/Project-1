@@ -18,7 +18,6 @@ public class Wrestler {
 		this.promo = promo;
 	}
 	
-	//factory method 
 	public static Wrestler getInstance(String choice) {
 		switch (choice) {
 		case "A":
@@ -31,15 +30,15 @@ public class Wrestler {
 		throw new IllegalArgumentException("Please pick A, B, or C ");
 			
 	}	
-	//.gethealth .sethealth 
-	public static double getInstance2(String result) {
+ 
+	public static double resetHealth(String result) {
 		switch (result) {
 		case "A":
-			  return health = health + 50;
+			  return -20;
 		case "B":
-			 return health = health + 30;
+			 return 20;
 		case "C": 
-			 return health = health + 20;
+			 return 10;
 		}
 		return 0;
 	}

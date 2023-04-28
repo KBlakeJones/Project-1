@@ -6,6 +6,7 @@ public class Scenes extends Scene {
 		Scanner in = new Scanner(System.in);
 		String result = null;
 		Scene a = new Scene();
+		Wrestler wrestler = new Wrestler();
 		
 		do {
 			try {

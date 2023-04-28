@@ -26,8 +26,9 @@ public class Scene {
 	private String scene6 = "\nC:\nThe Iron Sheik wants match bubba.  You tried to get his attention on twitter and now he hates you more than he hates the Hulkster.\n" 
 			+ "He wants you to put him over to clear the air.\n";
 	
-	private String scene7 = "\nCactus Jack did the job for you and you picked up a big win.  Experience +20 Promo + 20.\n" 
-			+ "Unfortunately it was a brutal match - 20 health - 20 strength. ";
+	private String scene7 = "\nCactus Jack did the job for you and you picked up a big win.\n" 
+			+ "Unfortunately your health took a hit.  It's a 'DEATH MATCH' with Cactus Jack.\n" 
+			+"What did you expect? What a way to start your career though. I like your style!";
 	
 	private String scene8 = "\nGreat Match! If that doesn’t win him the election the fix is in. \n"
 			+ "Kane is one of the safest workers in the industry.  + 20 to health or strength. \n"
@@ -53,17 +54,55 @@ public class Scene {
 	
 	private String scene15 = "\nDecent match.  You got your face on tv and luckily you didn’t call the audible and try to power slam Show.  +10 points all around.";
 	
-	private String scene16 = "11616161";
+	private String scene16 = "\nA:\nNew Jack has become a fan of your work. He wants to work a falls count anywhere match with you.\n" 
+			+ "It's at the Cow Palace so there is space for some crazy spots!\n";
 	
-	private String scene17 = "17171717";
+	private String scene17 = "\nB:\nRazor Ramon \n";
 	
-	private String scene18 = "1818181";
+	private String scene18 = "\nC:\nMacho Man Randy Savage \n";
 	
-	private String scene19 = "1919191";
+	private String scene19 = "\nThat was the worst decision you could make. New Jack during Mania season?\n" 
+			+ "Seriously what were you thinking? You're lucky you walked out of the ring.\n";
 	
-	private String scene20 = "202020";
+	private String scene20 = "\nHe might've been known as the bad guy, but he's one of the smartest and safest to work with.\n" 
+			+ "When those screeching tires hit during his entrance I knew we were in for a show.\n" ;
 	
-	private String scene21 = "212121";
+	private String scene21 = "\nDude you took an elbow drop from the 'MACHO MAN'. What a wild ride!\n" 
+			+ "If you wouldn't have looked at Miss Elizabeth he wouldn't have hit you with that stiff shot.\n" 
+			+ "All in all though super good match.";
+	
+	private String scene22 = "\nWhat? Stone Cold match at mania. What? ";
+	
+	private String scene23 = "\nYou made it. You didn't win, but you're going one on one with the great one at Mania!";
+	
+	private String scene24 = "\nYou made it to Mania, but you have to fight The Undertaker" 
+			+ "\nYou hear the gong hit and get goosebumps!!!" 
+			+ "\nAll of a sudden 'Limp Bizkit - Rollin' starts blaring through the arena!" 
+			+ "\nGod as my witness it's Biker Taker!!!" 
+			+ "\nTaker throttles it down the entrance ramp and crashes into the ring!" 
+			+ "\nUnfortunately he cannot compete." 
+			+ "\nMaybe next year buddy.";
+	
+	private String scene25 = "Lol, did you really think you'd get a Mania spot after that performance?  How embarassing!" 
+			+ "\nI wouldn't book you for a show at a local armory after that performance. I can't even give you a shot to try again." 
+			+ "\nSee ya loser!";
+	
+	private String scene26 = "\nWIN!!! You win!!!\nNot only that, but you're beating Stone Cold Steve Autsin at Wrestlemania!" 
+			+ "\nYou're working him over, he's busted open like its Wrestlmania 13 all over again. You've got him in the sharpshooter!"  
+			+ "\nThis is it, you're beating your idol on the grandest stage of them all!" 
+			+ "\nYou arch your back putting all the pressure on the small of his back and 'BOOM!!!'" 
+			+ "\nYou get kicked in the side of the head!" + "\nIt's Josh and Tosh!" 
+			+ "\nThe Bosh Brothers have turned on you!" 
+			+ "\nBlood ain't thicker than cold ones with the Texas Rattlesnake!" + "\nShould've known, Austin always said DTA" 
+			+ "\nDON'T TRUST ANYBODY";
+	
+	private String scene27 = "You technically win, but Stone Cold stomped a mudhole in you and walked it dry." 
+			+ "\nI mean it was hilarious! \nYou must've eaten 12 stunners" 
+			+ "\nMain evented Mania though! \nChildhood dream is complete!";
+	
+	private String scene28 = "";
+	
+	private String scene29 = "";
 	
 	
 	public Scene() {
@@ -248,6 +287,70 @@ public class Scene {
 
 	public void setScene21(String scene21) {
 		this.scene21 = scene21;
+	}
+
+	public String getScene22() {
+		return scene22;
+	}
+
+	public void setScene22(String scene22) {
+		this.scene22 = scene22;
+	}
+
+	public String getScene23() {
+		return scene23;
+	}
+
+	public void setScene23(String scene23) {
+		this.scene23 = scene23;
+	}
+
+	public String getScene24() {
+		return scene24;
+	}
+
+	public void setScene24(String scene24) {
+		this.scene24 = scene24;
+	}
+
+	public String getScene25() {
+		return scene25;
+	}
+
+	public void setScene25(String scene25) {
+		this.scene25 = scene25;
+	}
+
+	public String getScene26() {
+		return scene26;
+	}
+
+	public void setScene26(String scene26) {
+		this.scene26 = scene26;
+	}
+
+	public String getScene27() {
+		return scene27;
+	}
+
+	public void setScene27(String scene27) {
+		this.scene27 = scene27;
+	}
+
+	public String getScene28() {
+		return scene28;
+	}
+
+	public void setScene28(String scene28) {
+		this.scene28 = scene28;
+	}
+
+	public String getScene29() {
+		return scene29;
+	}
+
+	public void setScene29(String scene29) {
+		this.scene29 = scene29;
 	}
 	
 	

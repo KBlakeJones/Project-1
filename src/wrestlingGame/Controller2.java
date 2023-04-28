@@ -10,6 +10,7 @@ public class Controller2 {
 		String result; 
 		Wrestler wrestler = new Wrestler();
 		Scene a = new Scene();
+		Double health;
 		System.out.println("Welcome to WrestleCrania! You'll have to use your brain to make it to the main event.");
 
 		do {
@@ -27,7 +28,7 @@ public class Controller2 {
 
 		System.out.println("Choose a name for your wrestler:");
 		name = in.next();
-		System.out.println("Great name " + name + "! \nNow let's look at some training options.");
+		System.out.println("\nGreat name " + name + "! \nNow let's look at some training options.");
 		
 		System.out.println("Please choose A, B, or C");
 		System.out.println(a.getScene1() + a.getScene2() + a.getScene3());
@@ -49,21 +50,34 @@ public class Controller2 {
 		System.out.println("Experience: " + wrestler.getExperience());
 		System.out.println("Promo: " + wrestler.getPromo());
 		
-		System.out.println("You ready for your first match?");
+//		System.out.println("You ready for your first match?");
+		do {
+			System.out.println("\nAre you ready for your first match(y/n)");
+			result = in.next();
+			result = (result.toLowerCase().substring(0, 1));
+		if(result.equals("y")) {
+			System.out.println("\nGreat " + name +  " you have these available bookings. \nPlease choose match A, B or C \n" + a.getScene4() + a.getScene5() + a.getScene6());
+		} else if (result.equals("n")) {
+			System.out.println("Come back when you're ready chump!");
+			continue;
+		} else 
+			System.out.println("Please enter yes or no");
+		}while (!result.equals("y"));
+		
+		
+//		System.out.println("Please choose match A, B, or C");
 		
 		do {
+//			System.out.println("you have these available bookings " + a.getScene4() + a.getScene5() + a.getScene6());
 			try {
 			result = in.next();
 			result = (result.toUpperCase().substring(0, 1));
-			wrestler.setHealth(Wrestler.getInstance2(result) + wrestler.getHealth());
+			wrestler.setHealth(Wrestler.resetHealth(result) + wrestler.getHealth());
 			if (result.equals("A")) {
 				System.out.println(a.getScene7());
-//				wrestler.getHealth();
 			} else if (result.equals("B")) {				
 				System.out.println(a.getScene8());
-//				return;
 			} else if(result.equals("C")) {
-//				wrestler.setHealth(wrestler.getHealth() - 10);
 				System.out.println(a.getScene9());
 			} else
 				System.out.println("Please Pick A, B or C");
@@ -72,11 +86,90 @@ public class Controller2 {
 			}
 			} while(!result.equals("A") && !result.equals("B") && !result.equals("C"));
 		
-//		wrestler.setHealth(wrestler.getHealth() + Wrestler.getInstance2(result));
-		
-		System.out.println("hijdfhlfkjhfhsao");
-		System.out.println(wrestler.getHealth());
 
+		
+//		System.out.println("hijdfhlfkjhfhsao");
+		System.out.println("\nYour health is now " + wrestler.getHealth());
+//		wrestler.setHealth(wrestler.getHealth());
+//		System.out.println(wrestler.getHealth());
+		System.out.println("\nLet's get to match 2 ");
+		System.out.println("You have the following bookings available, select one.");
+		System.out.println(a.getScene10()+ a.getScene11() + a.getScene12());
+
+		do {
+			try {
+			result = in.next();
+			result = (result.toUpperCase().substring(0, 1));
+			wrestler.setHealth(wrestler.getHealth() + Wrestler.resetHealth(result));
+			if (result.equals("A")) {
+				System.out.println(a.getScene13());
+			} else if (result.equals("B")) {
+				System.out.println(a.getScene14());
+			} else if(result.equals("C")) {
+				System.out.println(a.getScene15());
+			} else
+				System.out.println("Dude seriously A, B, or C. You should get it by now.");
+			}catch (NullPointerException e){
+				System.out.println("Please enter A, B, or C ");
+			}
+			} while(!result.equals("A") && !result.equals("B") && !result.equals("C"));
+		
+		System.out.println("\nYour health is now " + wrestler.getHealth());
+		System.out.println("\nLast match to raise your stock before the Mania matches are set.\nReady to see your bookings?(y/n)");
+		
+		do {
+//			System.out.println("\nReady to bring the house down?(y/n)");
+			result = in.next();
+			result = (result.toLowerCase().substring(0, 1));
+		if(result.equals("y")) {
+			System.out.println("Heres what we got\nBetter bring the house down\n" + a.getScene16() + a.getScene17() + a.getScene18());
+		} else if (result.equals("n")) {
+			System.out.println("Figured you'd tap out eventually.");
+			continue;
+		} else 
+			System.out.println("Bruuuuuhhhh, you don't know this is yes or no yet?");
+		}while (!result.equals("y"));
+		
+		do {
+			try {
+			result = in.next();
+			result = (result.toUpperCase().substring(0, 1));
+			wrestler.setHealth(wrestler.getHealth() + Wrestler.resetHealth(result));
+			if (result.equals("A")) {
+				System.out.println(a.getScene19());
+			} else if (result.equals("B")) {
+				System.out.println(a.getScene20());
+			} else if(result.equals("C")) {
+				System.out.println(a.getScene21());
+			} else
+				System.out.println("Dude seriously A, B, or C. You should get it by now.");
+			}catch (NullPointerException e){
+				System.out.println("Please enter A, B, or C ");
+			}
+			} while(!result.equals("A") && !result.equals("B") && !result.equals("C"));
+		
+		System.out.println("Health is now " + wrestler.getHealth());
+		
+		health = wrestler.getHealth();
+		if (health >= 90) {
+			System.out.println(a.getScene22());
+			if(health > 101) {
+				System.out.println(a.getScene26());
+			}else
+				System.out.println(a.getScene27());
+		}else if (health >= 70) {
+			System.out.println(a.getScene23());
+			if (health >= 80) {
+				System.out.println(a.getScene28());
+			}else
+				System.out.println(a.getScene29());
+		}else if (health >= 60) {
+			System.out.println(a.getScene24());
+			
+		}else
+			System.out.println(a.getScene25());
+		
+		in.close();
 	}
 	
 

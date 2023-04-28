@@ -14,7 +14,7 @@ public class Matches extends Scene{
 			try {
 			result = in.next();
 			result = (result.toUpperCase().substring(0, 1));
-			wrestler.setHealth(Wrestler.getInstance2(result) + wrestler.getHealth());
+			wrestler.setHealth(Wrestler.resetHealth(result) + wrestler.getHealth());
 			if (result.equals("A")) {
 				System.out.println(a.getScene7());
 			} else if (result.equals("B")) {	
@@ -27,9 +27,7 @@ public class Matches extends Scene{
 				System.out.println("Please enter A, B, or C ");
 			}
 			} while(!result.equals("A") && !result.equals("B") && !result.equals("C"));
-//			wrestler.setHealth(wrestler.getHealth() + Wrestler.getInstance2(result));
-	
-//		in.close();
+
 	}
 
 

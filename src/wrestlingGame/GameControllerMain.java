@@ -87,7 +87,7 @@ public class GameControllerMain {
 		System.out.println("Which match would you like to try first?");
 		
 		new Matches();
-		wrestler.setHealth(wrestler.getHealth() + Wrestler.getInstance2(result));
+	//	wrestler.setHealth(wrestler.getHealth() + Wrestler.getInstance2(result));
 		System.out.println(wrestler.getHealth());
 //		wrestler.setHealth(wrestler.getHealth() + Wrestler.getInstance2(result));
 //		System.out.println(wrestler.getHealth());
@@ -131,6 +131,8 @@ public class GameControllerMain {
 //			} while(!result.equals("A") && !result.equals("B") && !result.equals("C"));
 		
 		new Matches2();
+		wrestler.setHealth(wrestler.getHealth() + Wrestler.resetHealth(result));
+		System.out.println(wrestler.getHealth());
 		
 		System.out.println("\nLet's get to match 3 ");
 		System.out.println("You have the following bookings available, select one.");
